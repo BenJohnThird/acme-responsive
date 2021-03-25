@@ -1,0 +1,414 @@
+/* Navbar Content */
+.navbar-section {
+  height: 100px;
+  background-color: white;
+  border-bottom: 15px solid #001254;
+}
+
+.navbar-main {
+  height: 100%;
+}
+
+.navbar {
+  height: 100%;
+  align-items: flex-end;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: flex-end;
+}
+
+.navbar-brand img {
+  height: 75px;
+  width: 120px;
+  position: relative;
+  bottom: -25px;
+}
+
+.navbar-tagline {
+  line-height: 1.2;
+  padding: 0 20px 0 10px;
+}
+
+.navbar-tagline .sub-text {
+  font-size: 12px;
+  color: #6cc1fa;
+}
+
+.navbar-tagline .headline {
+  font-size: 24px;
+  font-weight: bold;
+  color: #27468f;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.nav-link {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-section {
+    height: auto;
+    min-height: 50px;
+    border: none;
+  }
+
+  .navbar-main {
+    background-color: #ebecee;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar-brand img {
+    top: 0px;
+    left: 45%;
+    position: absolute;
+    height: 50px;
+  }
+
+  .navbar-tagline {
+    border: none !important;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .site-link {
+    border-bottom: 1px solid grey;
+  }
+
+  .site-link .nav-link {
+    color: #173a8a;
+    background-color: #ebecee;
+  }
+
+  .nav-link {
+    padding: 20px;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+    background-color: white;
+  }
+}
+
+/* Landing Content */
+.landing-content {
+  background-image: url("./../assets/images/acme-landing-page.jpg");
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.landing-content h1 {
+  font-size: 50px;
+  line-height: 0.9;
+}
+
+.landing-content .sub-text {
+  font-weight: lighter;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+/* ACME Insights */
+.acme-insights .acme-card {
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+  color: #1550d2;
+  padding: 20px;
+  border-bottom: 10px solid #1550d2;
+  -webkit-box-shadow: 0px 0px 12px -3px #000000;
+  box-shadow: 0px 0px 12px -3px #000000;
+}
+
+.acme-insights .green {
+  color: #00a49c;
+  border-bottom: 10px solid #00a49c;
+}
+
+.acme-insights .light-blue {
+  color: #019bfb;
+  border-bottom: 10px solid #019bfb;
+}
+
+.acme-card .acme-body {
+  height: 290px;
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+.acme-body:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  border-top: 90px solid #fff;
+  border-right: 90px solid transparent;
+  width: 0;
+  z-index: 2;
+}
+
+.acme-body:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 90px solid white;
+  border-left: 90px solid transparent;
+  width: 0;
+  z-index: 2;
+}
+
+.acme-body img {
+  width: 100%;
+  height: 100%;
+}
+
+.acme-card .acme-footer {
+  height: 75px;
+  width: 100%;
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .landing-content {
+    background-image: none;
+    background-color: #1a9cf7;
+    position: relative;
+  }
+
+  .research {
+    position: absolute;
+    color: white;
+    top: 20px;
+  }
+
+  .landing-content .acme-wealth {
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  .dotted-line {
+    color: #76c7fe;
+    line-height: 0;
+    font-size: 40px;
+  }
+
+  .landing-content .sub-text {
+    font-size: 16px;
+  }
+}
+
+/* Commitment to Professionals */
+.commitment-section {
+  background-image: url("./../assets/images/abstract-blue.png");
+  height: 350px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  margin-top: 25px;
+}
+
+.commitment-section button {
+  border-color: white;
+  color: white;
+  width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .commitment-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .commitment-section div {
+    width: 75% !important;
+  }
+}
+
+/* Events Section */
+.event-tile-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-tile {
+  background-color: #1450d2;
+  width: 400px;
+  height: 240px;
+  margin-right: 20px;
+  color: #1550d2;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.event-body {
+  padding: 20px;
+  height: 90%;
+  position: relative;
+}
+
+.event-content {
+  color: white;
+  margin-top: 40px;
+}
+
+.event-content button {
+  margin-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  width: 200px;
+  color: white;
+  border-color: white;
+  border-radius: 0;
+}
+
+.event-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.event-subtext {
+  font-size: 13px;
+}
+
+.event-footer {
+  height: 10%;
+  width: 100%;
+  background-color: #ebebeb;
+}
+
+.event-footer:before {
+  content: '';
+  position: absolute;
+  border-top: 40px solid #1450d2;
+  border-right: 40px solid #ebebeb;
+  width: 60px;
+}
+
+.event-places {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.event-date {
+  height: 80px;
+  width: 80px;
+  background-color: #001254;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  line-height: 1;
+}
+
+.event-date:before {
+  content: '';
+  position: absolute;
+  border-bottom: 20px solid #3c4e97;
+  border-left: 15px solid transparent;
+  top: 0;
+  left: -15px;
+}
+
+.event-date .month {
+  font-size: 13px;
+}
+
+.event-date .day {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Footer Section */
+.footer-section {
+  height: 60px;
+  margin-top: 70px;
+  background-color: #707070;
+  color: white;
+  font-size: 11px;
+}
+
+.footer-section .material-icons {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Footer Section Links */
+.footer-section-links {
+  background-color: #cccccc;
+}
+
+.footer-links {
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-section-links .site-link {
+  background-color: transparent;
+  border-bottom: 1px solid grey;
+  color: #173a8a;
+  padding: 10px 20px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-section {
+    margin-top: 20px;
+  }
+}
+
+/* Global Styles */
+.title {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.sub-text {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 968px) {
+  .scroll-container {
+    max-height: 500px;
+    height: 600px;
+    width: auto;
+    max-width: 100%;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    padding-right: 5em;
+  }
+}
