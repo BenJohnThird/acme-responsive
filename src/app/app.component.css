@@ -374,12 +374,13 @@
   margin-bottom: 10px;
   font-weight: bold;
   cursor: pointer;
+  color: #7b7b7c !important;
 }
 
 .footer-section-links .site-link {
   background-color: transparent;
   border-bottom: 1px solid grey;
-  color: #173a8a;
+  color: #173a8a !important;
   padding: 10px 20px;
   font-weight: normal;
 }
